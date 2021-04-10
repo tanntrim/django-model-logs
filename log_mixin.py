@@ -1,7 +1,7 @@
 from datetime import datetime
 from django.contrib.postgres.fields.jsonb import JSONField as JSONBField
 from django.db import models
-
+# from #Middleware_#Path import get_request
 
 class LogMixin(models.Model):
     log = JSONBField(default=list, null=True, blank=True)
