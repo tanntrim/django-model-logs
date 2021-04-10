@@ -3,7 +3,6 @@ from django.contrib.postgres.fields.jsonb import JSONField as JSONBField
 from django.db import models
 
 
-
 class LogMixin(models.Model):
     log = JSONBField(default=list, null=True, blank=True)
     def save(self, *args, **kwargs):
